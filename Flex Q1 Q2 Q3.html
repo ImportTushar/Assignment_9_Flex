@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .parent{
+            display: flex;
+            background-color: rgb(249, 252, 252);
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .child{
+            
+            background-color: rgb(18, 249, 18);
+            width: 200px;
+            height: 200px;
+            flex-basis: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+           Q1) The main difference between the CSS Flexbox layout model and the CSS Grid layout model is how they handle the organization and alignment of elements within a container:
+            <p>
+                1)Flexbox Layout Model:
+            </p>
+            <p>
+                Flexbox, or the Flexible Box layout model, is designed for arranging elements along a single axis (either horizontally or vertically) within a container.
+            </p>
+            <p>
+               2) Grid Layout Model:
+            </p>
+            <p>
+                CSS Grid is a two-dimensional layout system that allows you to create both rows and columns in a grid-like structure.
+            </p>
+        </p>
+        <hr>
+        <p>
+            Q2)
+            <br>
+            <br>
+            1)justify-content:
+            <br>
+
+            The justify-content property controls how flex items are aligned along the main axis (the primary axis of the flex container). The main axis direction is determined by the flex-direction property.
+            <br>
+            2)align-items:
+            <br>
+            The align-items property controls how flex items are aligned along the cross-axis (the perpendicular axis to the main axis). The cross-axis direction is determined by the flex-direction property.
+            <br>
+            3)gap:
+            <br>
+            The gap property (or its individual counterparts like gap-row and gap-column) sets the spacing between flex items in a grid or flex container.
+            <br>
+            4)flex-direction:
+            <br>
+            The flex-direction property determines the direction in which flex items are laid out within the flex container.
+            <br>
+            5)flex-wrap:
+            <br>
+            The flex-wrap property controls whether flex items should wrap to the next line or remain on a single line if they overflow the container's size along the main axis.
+        </p>
+    </div>
+    <div class="parent">
+        <p class="child 1">
+            Q3)
+        </p>
+    </div>
+</body>
+</html>

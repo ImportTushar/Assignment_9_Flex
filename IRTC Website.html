@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Architects+Daughter&family=Assistant:wght@200&family=Dancing+Script&family=Heebo:wght@350&family=Montserrat:wght@100&family=Oswald:wght@300&family=Pacifico&family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Architects+Daughter&family=Assistant:wght@200&family=Dancing+Script&family=Heebo:wght@100&family=Montserrat:wght@100&family=Oswald:wght@300&family=Pacifico&family=Raleway:ital,wght@1,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        .parent{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            
+        }
+
+        .logo {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            
+            align-items: center;
+            display: inline-block;
+            padding-top: 50.69px;
+            padding-left: 101.39px;
+            
+        }
+
+        .train-img{
+            flex: 0;
+            display: flex; 
+            justify-content: flex-end; 
+            background-color: rgb(255, 255, 255);    
+        }
+
+        .train{
+            max-width: 500px;
+            height: 100vh;
+            padding-bottom: 50px;
+        }
+
+        .irctc-logo{
+            width: 66.92px;
+            height: 81.11px;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .IRL{
+            width: 81.11px;
+            height: 81.11px;
+            background-color: rgb(255, 255, 255);
+            
+
+        }
+
+        .container{
+            background-color: rgb(255, 255, 255);
+            width: 321.81px;
+            height: 81.88px;
+            margin-top: 50px;
+            margin-right: 30px;
+            font-size: 1.1em;
+            
+
+            /* position: absolute;
+            padding: 100px;
+            margin-left: 600px;
+            margin-top: 50px; */
+        }
+
+        span{
+            /* display: flex;
+            flex-direction: row;
+            justify-content: flex-end; */
+
+
+            width: 81.88px;
+            height: 18px;
+        }
+
+
+
+        button.Lo,.Re,.AL{
+            width: 71.42px;
+            height: 38.28px;
+            position: absolute;
+        }
+
+        .Lo{
+            width: 71.42px;
+            height: 38.28px;
+            margin-top: 20px;
+            border: 30%;
+            border-radius: 50px 1px;
+            background-color: orange;
+            color: aliceblue;
+            box-shadow: 1px 1px 2em 0.1em orange;
+        }
+
+        .Re{
+            width:91.42px ;
+            height: 38.28px;
+            margin-top: 20px;
+            margin-left: 85px;
+        }
+
+        .login{
+            position: absolute;
+            margin-right: 320px;
+            margin-top: 20px;
+        }
+
+
+        .AL{
+            width: 118.42px;
+            height: 38.28px;
+            margin-top: 20px;
+            margin-left: 190px;
+
+        }
+
+        .detail{
+            display: inline-block;
+            
+            display: flex;
+            justify-content: center;
+            justify-content: space-between;
+            gap: 20px;
+            justify-content: flex-end;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        h1{
+                /* position: absolute; */
+            width: 370px;
+            height: 59px;
+            /* background-color: rgb(234, 130, 11); */
+            position: absolute;
+            /* margin-right: 600px; */
+            margin-top: 223.06px;
+            margin-left: -598px;
+            font-size: 2.5em;
+            font-family: 'Heebo', sans-serif;
+        }
+
+        h2{
+            display: inline-block;
+            /* background-color: chartreuse; */
+            /* width: 438px;
+            height: 39px; */
+            gap: 10px;
+            position: absolute;
+            margin-top: 300.14px;
+            margin-left: -598px;
+            font-family: 'Heebo', sans-serif;
+
+        }
+
+        .safety{
+            color: rgb(53, 200, 53);
+
+        }
+
+        .security{
+            margin-left: -520px;
+            color: rgb(207, 137, 7);
+
+        }
+
+        .punch{
+            margin-left:-420px ;
+            color: rgb(10, 10, 132);
+
+        }
+
+        .Indo{
+            margin-top:-100px ;
+            position: relative;
+        }
+
+
+        .options{
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            display: inline-block;
+            height: 44px;
+            margin-left: -600px;
+            border: 0.2em;
+            margin-top: 370px;
+            
+            font-family: 'Heebo', sans-serif;
+
+            
+             
+        }
+
+        
+
+        .booking{
+            /* background-image: url(./book.png);
+            background-repeat: no-repeat;
+            background-size:90px;
+            display: inline-block;
+            width: 90px;
+            height: 22px; */
+            margin-top: 5px;
+            background-color: rgb(34, 34, 134);
+            color: white;
+            font-size: medium;
+            border-radius: 0.2em;
+
+        }
+
+        .PNR{
+            margin-left: 15px;
+            /* margin-bottom: 100px; */
+            font-size: medium;
+            border-radius: 0.2em;
+
+        }
+
+        .CV{
+            margin-left: 15px;
+            font-size: medium;
+            border-radius: 0.2em;
+
+        }
+
+        .searching{
+            position: relative;
+            margin-top: 23em;
+            margin-left: -36em;
+            position: relative;
+            display: inline-block;
+            font-family: 'Heebo', sans-serif;
+
+        }
+
+        .Rail{
+            background-color: rgb(255, 255, 255);
+            padding-top: 1em;
+            width: 100vh;
+            display: inline-block;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-left:2em ;
+            height: 0.5em;
+            font-family: 'Heebo', sans-serif;
+
+        }
+
+        /* }
+        .dropt{
+            color:blue;
+            border: none;
+            cursor: pointer;
+        }
+
+
+
+        .dropd{
+            color:black;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropd a:hover{
+            background-color: cyan;
+            color:white;
+        }
+
+        .rail:hover .dropd:hover{
+            display: block;
+        } */
+
+        .metro{
+            background-color: rgb(252, 252, 252);
+            margin-left:-35em;
+            display: flex;
+            /* justify-content: space-between; */
+            gap: 16em;
+            font-size: large;
+            font-weight:bold;
+            font-family: 'Heebo', sans-serif;
+
+        }
+
+        .Date{
+            position: relative;
+            
+            margin-left: -35em;
+            position: relative;
+            display: inline-block;
+            font-family: 'Heebo', sans-serif;
+
+        }
+
+        .Time{
+            background-color: rgb(252, 252, 252);
+            padding-top: 1em;
+            width: 100vh;
+            display: inline-block;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-left:1em ;
+            height: 0.5em;
+            font-family: 'Heebo', sans-serif;
+
+        }
+        
+        .Tatkal{
+            background-color: rgb(252, 252, 252);
+            margin-left:-33em;
+            display: flex;
+            /* justify-content: space-between; */
+            gap: 15em;
+            font-size: large;
+            font-weight:bold;
+            font-family: 'Heebo', sans-serif;
+
+        }
+        .Week{
+            position: relative;
+            background-color: aqua;
+            margin-left: -35em;
+            position: relative;
+            display: inline-block;
+            font-family: 'Heebo', sans-serif;
+
+        }
+
+        .and{
+            background-color: rgb(246, 246, 246);
+            width: 100vh;
+            display: inline-block;
+            display: flex;
+            justify-content: space-between;
+            margin-left:1em ;
+            height: 0.5em;
+            position: absolute;
+            margin-top: -3em;
+        }
+
+
+
+
+        .yes{
+            position: relative;
+            margin-left: -35em;
+            position: relative;
+            display: inline-block;
+        }
+
+        .submit{
+            width: 800px;
+            height: 4em;
+            font-size: larger;
+            font-weight: bolder;
+            color: white;
+            background-color: rgb(32, 169, 32);
+            border-radius: 0.7em;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <section class="logo">
+            <img src="./LOGO.png" alt="IRCTC Logo" class="irctc-logo">
+            <img src="./indian railway logo.png" alt="Indian Railway Logo" class="IRL">
+        </section>
+
+        <div class="container">
+            <div class="detail">
+                <span><a class="AT" href="">Ask Tushar</a></span>
+                <span><a class="CU" href="">Contact Us</a></span>
+                <span><a class="Alert" href="">Alerts</a></span>
+
+                <div class="login">
+                    <span><button class="Lo">Login</button></span>
+                    <span><button class="Re">Register</button></span>
+                    <span><button class="AL">Agent Login</button></span>
+                </div>
+            </div>
+    
+            <div class="Indo">
+                <div class="main">
+                    <Header>
+                        <h1 class="IR">
+                            Indian Railways
+                        </h1>
+                        <span><h2 class="safety">Safety</h2></span>
+                        <span><h2 class="security">Security</h2></span>
+                        <span><h2 class="punch">Punctuality</h2></span>
+                    </Header>
+                </div>
+    
+                <div class="options">
+                    <span><button class="booking">&#127915; Book Ticket</button></span>
+                    <span><button class="PNR">&#10004; PNR Status</button></span>
+                    <span><button class="CV">&#x1F4CA; Charts / Vacancy </button></span>
+                </div>
+    
+            </div>
+            <div class="searching">
+                <section class="Rail">
+                    <p>From &nbsp; <a href="">&#709;</a></p>
+                    <p>To &nbsp; <a href="">&#709</a></p>
+                </section>
+            </div>
+            <br>
+            <div class="metro">
+                <p class="bangk">&#128646; Bangalore</p>
+                <p class="jour"><a href="">&#8644;</a></p>
+                <p class="kasar">&#128646; Kasaragod</p>
+            </div>
+
+            <br>
+            <div class="Date">
+                <section class="Time">
+                    <p>&#128197; Date &nbsp; <a href="">&#709;</a></p>
+                    <p>&#9762; &nbsp; Class </p>
+                    <p>&#x2630; &nbsp; Seat Type &nbsp; <a href="">&#709</a></p>
+                </section>
+            </div>
+
+            <div class="Tatkal">
+                <p class="bangk"> 01 Aug 23</p>
+                <p class="jour"><a href="">3A</a></p>
+                <p class="kasar">TATKAL</p>
+            </div>
+            
+            <br>
+            <div class="Week">
+                <section class="and">
+                    <p>Tuesday</p>
+                    <p>AC 3 Tier </p>
+                    <p>AC 3 Tier</p>
+                </section>
+            </div>
+
+            <div>
+                <section class="yes">
+                    <button class="submit">
+                        Search Trains &#8594;
+                    </button>
+                </section>
+            </div>
+
+
+        </div>
+        <section class="train-img">
+            <img src="./IRctc.png" alt="IRCTC" class="train">
+        </section>  
+
+    </div>
+</body>
+</html>
